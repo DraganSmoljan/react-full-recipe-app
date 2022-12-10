@@ -5,7 +5,7 @@ const Wrapper = styled.div`
 `;
 
 const Card = styled.div`
-  min-height: 25rem;
+  min-height: 15rem;
   border-radius: 2rem;
   overflow: hidden;
   position: relative;
@@ -26,14 +26,14 @@ const Card = styled.div`
     bottom:0%;
     transform:translate(-50%, 0%);
     color: white;
-    width:100%
+    width:100%;
     text-align: center;
     font-weight:600;
-    font-size: 1rem;
+    font-size: 0.9rem;
     height:40%;
-    display:flex;
-    justyfy-content: center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -44,3 +44,5 @@ const Gradient = styled.div`
   height:100%;
   background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, 0.5));
 `;
+
+export { Wrapper, Card, Gradient };
