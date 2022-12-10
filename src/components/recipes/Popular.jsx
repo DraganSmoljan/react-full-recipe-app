@@ -1,4 +1,4 @@
-import { Wrapper , Card, Gradient } from "./styles/Container.styled"
+import { Wrapper , Card, Gradient } from "../styles/Container.styled"
 import { useEffect, useState } from "react"
 import { Splide, SplideSlide } from "@splidejs/react-splide"
 import "@splidejs/splide/dist/css/splide.min.css"
