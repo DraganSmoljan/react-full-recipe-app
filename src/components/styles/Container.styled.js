@@ -45,4 +45,10 @@ const Gradient = styled.div`
   background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, 0.5));
 `;
 
-export { Wrapper, Card, Gradient };
+const List = styled.div`
+display: flex;
+justify-content: center;
+margin: 2rem 0rem;
+`;
+
+export { List, Wrapper, Card, Gradient};
