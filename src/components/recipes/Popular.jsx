@@ -26,7 +26,6 @@ function Popular() {
   }
 
   return (
-    <div>
       <Wrapper>
         <h3>Popular picks</h3>
         <Splide
@@ -50,7 +49,6 @@ function Popular() {
           })}
         </Splide>
       </Wrapper>
-    </div>
   )
 }
 
