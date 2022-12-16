@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { useParams, Link } from "react-router-dom"
 import { Card, Gradient, Grid } from "../components/styles/Container.styled";
 
 
@@ -27,8 +27,10 @@ function Searched() {
             searchedRecipes.map((result)=> {
                 return(
                     <Card key={result.id}>
+                         <Link to={"/recipe/" + result.id}>
                         <img src={result.image} alt={result.alt} />
                         <p>{result.title}</p>
+                        </Link>
                         <Gradient/>
                     </Card>
                 )
