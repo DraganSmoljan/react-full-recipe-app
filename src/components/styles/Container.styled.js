@@ -1,5 +1,6 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const Wrapper = styled.div`
   margin: 4rem 0rem;
@@ -70,7 +71,7 @@ const SLink = styled (NavLink)`
 
 `;
 
-const Grid = styled.div`
+const Grid = styled(motion.div)`
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 3rem;
@@ -139,7 +140,7 @@ justify-content: center;
 margin: 2rem 0rem;
 `;
 
-const DetailWrapper = styled.div`
+const DetailWrapper = styled(motion.div)`
   margin-top: 10rem;
   margin-bottom: 5rem;
   display: flex;
@@ -172,7 +173,20 @@ const DetailWrapper = styled.div`
     margin-left: 10rem;
   `;
 
+const Logo = styled(Link)`
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: 'Lobster Two', cursive;
+`;
 
-
-
-export { List, Wrapper, Card, Gradient, CardCuisine, Grid, SLink, FormStyle, DetailWrapper, Button, Info };
+const Nav = styled.div`
+  padding: 4rem 0rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  svg {
+    font-size: 2rem;
+  }
+`;
+export { List, Wrapper, Card, Gradient, CardCuisine, Grid, SLink, FormStyle, DetailWrapper, Button, Info, Logo, Nav  };
