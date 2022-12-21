@@ -2,7 +2,6 @@ import Veggie from "../components/recipes/Veggie"
 import Popular from "../components/recipes/Popular"
 import { motion } from 'framer-motion'
 
-import React from "react";
 
 function Home () {
   return(
