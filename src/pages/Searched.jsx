@@ -18,7 +18,6 @@ function Searched() {
         `)
         const searchedRecipes = await api.json();
         setSearchedRecipes(searchedRecipes.results);
-        console.log("result", searchedRecipes)
 
     }
 

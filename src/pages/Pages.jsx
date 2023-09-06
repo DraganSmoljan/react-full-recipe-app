@@ -8,9 +8,10 @@ import { AnimatePresence } from 'framer-motion'
 
 function Pages() {
   const location = useLocation();
+  console.log("lokacija", location);
   return (
     <AnimatePresence exitBeforeEnter>
-      <Routes location={location} key={location.pathname}>
+      <Routes key={location.pathname}>
         <Route path="/" element={<Home/>} />
         <Route path="/cuisine/:type" element={<Cuisine/>} /> 
         <Route path="/searched/:searched" element={<Searched/>}/>

@@ -8,13 +8,12 @@ import { GiKnifeFork } from "react-icons/gi";
 function App() {
   return (
     <div className="App">
-      
       <BrowserRouter>
-      <Nav>
-        <GiKnifeFork/>
-        <Logo to={"/"}>deliciousss</Logo>
-      </Nav>
-      <Search/>
+        <Nav>
+          <GiKnifeFork/>
+          <Logo to={"/"}>What to Eat Today?</Logo>
+        </Nav>
+        <Search/>
         <Category/>
         <Pages/>
       </BrowserRouter>
